@@ -1,0 +1,78 @@
+/* Reset simples */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Fundo geral */
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #121212;
+    color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Container do anúncio */
+  .evento {
+    background-color: rgba(0, 0, 0, 0.7); /* leve overlay para o texto */
+    text-align: center;
+    padding: 40px 30px;
+    border-radius: 15px;
+    max-width: 600px;
+    width: 90%;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+  
+    /* 🔥 Desafio extra: imagem de fundo */
+    background-image: url("https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80");
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken; /* mistura a imagem com o overlay */
+  }
+  
+  /* Título */
+  .evento h1 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #ffcc00;
+  }
+  
+  /* Data e hora */
+  .evento p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #eaeaea;
+  }
+  
+  /* Lista */
+  .evento ul {
+    list-style: none; /* remove marcadores */
+    margin-bottom: 25px;
+  }
+  .evento ul li {
+    margin: 10px 0;
+    font-size: 1rem;
+  }
+  
+  /* Botão */
+  .button {
+    display: inline-block;
+    background-color: #ffcc00;
+    color: #121212;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  }
+  
+  /* Hover no botão */
+  .button:hover {
+    background-color: #ffaa00;
+    transform: translateY(-3px);
+  }
+  
